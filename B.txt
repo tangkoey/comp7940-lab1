@@ -1,5 +1,3 @@
 <<<<<<< HEAD
 Joe
-=======
 Donald
->>>>>>> e418cec018d61659bfd47a79f9244b659f7a227b
