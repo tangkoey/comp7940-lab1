@@ -29,12 +29,16 @@ def main():
     # on different commands - answer in Telegram
     dispatcher.add_handler(CommandHandler("add", add))
     dispatcher.add_handler(CommandHandler("help", help_command))
+    dispatcher.add_handler(CommandHandler("hello", hello))
 
 
     # To start the bot:
     updater.start_polling()
     updater.idle()
 
+def hello(update: Update, context: CallbackContext) -> None:
+    msg = context.args[0]   # /add keyword <-- this should store the keyword
+    update.message.reply_text('Good day, '+ msg +'!')
 
 def echo(update, context):
     reply_message = update.message.text.upper()
