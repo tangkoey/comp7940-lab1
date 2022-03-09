@@ -14,7 +14,7 @@ jobs:
         env:
           HEROKU_API_KEY: ${{secrets.HEROKU_API_KEY}}
           HEROKU_APP_NAME: "c794ht2"  # Rename this to the app of your Heroku app.
-        run: git push -f https://heroku:$HEROKU_API_KEY@git.heroku.com/c794ht2.git master
+        run: git push -f https://heroku:d116234e-4ea5-4a57-a6de-0fc88ff0a776@git.heroku.com/c794ht2.git master
         
       - name: Security vulnerabilities scan
         uses: aufdenpunkt/python-safety-check@master
